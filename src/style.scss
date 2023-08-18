@@ -1,12 +1,115 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
-.wp-block-create-block-boiler-plate {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
 }
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html :where(.wp-block) {
+    max-width: 100%;
+}
+
+.features {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    &.-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    &.-big{
+        padding-right: 115px;
+        padding-left: 115px;
+    }
+    &.-medium{
+        padding-right: 215px;
+        padding-left: 215px;
+    }
+    &.-small{
+        padding-right: 315px;
+        padding-left: 315px;
+    }
+}
+
+// typography
+
+h2.title {
+    font-size: 58px;
+    line-height: 70px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h3.title {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; 
+    letter-spacing: -0.4px;
+}
+
+
+
+.heading {
+    &.-with-border {
+        border: 2px solid var(--colors-grey, #EBEAED);
+    }
+    &.-rounded {
+        border-radius: 10px;
+    }
+    &.-text-align-left {
+        text-align: left;
+    }
+    &.-text-align-center {
+        text-align: center;
+    }
+    &.-text-align-right {
+        text-align: right;
+    }
+    &__label {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__title {
+        
+    }
+    &__lead {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+    }
+    &__description {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+    }
+}
+
+// .content {
+//     display: grid;
+//     gap: 1rem;
+//     &.-has-1-columns {
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+//     &.-has-2-columns {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+//     &.-has-3-columns {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+// }

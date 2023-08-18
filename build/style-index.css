@@ -1,16 +1,96 @@
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-boiler-plate {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+@font-face {
+  font-family: "DM Sans";
+  src: url(fonts/DMSans-VariableFont_opsz,wght.90130db6.ttf) format("truetype");
+}
+* {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html :where(.wp-block) {
+  max-width: 100%;
+}
+
+.features {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.container.-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.container.-big {
+  padding-right: 115px;
+  padding-left: 115px;
+}
+.container.-medium {
+  padding-right: 215px;
+  padding-left: 215px;
+}
+.container.-small {
+  padding-right: 315px;
+  padding-left: 315px;
+}
+
+h2.title {
+  font-size: 58px;
+  line-height: 70px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h3.title {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+}
+
+.heading.-with-border {
+  border: 2px solid var(--colors-grey, #EBEAED);
+}
+.heading.-rounded {
+  border-radius: 10px;
+}
+.heading.-text-align-left {
+  text-align: left;
+}
+.heading.-text-align-center {
+  text-align: center;
+}
+.heading.-text-align-right {
+  text-align: right;
+}
+.heading__label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.heading__lead {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.heading__description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

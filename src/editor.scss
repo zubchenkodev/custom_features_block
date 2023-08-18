@@ -1,9 +1,39 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
 
-.wp-block-create-block-boiler-plate {
-	border: 1px dotted #f00;
+
+.content {
+    .block-editor-block-list__layout {
+        display: grid;
+        grid-gap: 1rem;
+        
+    }
+    &.-has-1-columns{
+        .block-editor-block-list__layout {
+            grid-template-columns: repeat(1, 1fr);
+        }
+       
+    }
+    &.-has-3-columns{
+        .block-editor-block-list__layout {
+            grid-template-columns: repeat(3, 1fr);
+        }
+       
+    }
+    &.-has-2-columns{
+        &.-layout-equal {
+            .block-editor-block-list__layout {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+        &.-layout-left {
+            .block-editor-block-list__layout {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        &.-layout-right {
+            .block-editor-block-list__layout {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    }
 }
