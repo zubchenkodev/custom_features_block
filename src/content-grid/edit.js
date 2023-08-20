@@ -41,7 +41,7 @@ const EditBlock = ( { attributes, setAttributes } ) => {
 		setAttributes( { layoutType: value } );
 	}
 
-	const ALLOWED_BLOCKS = [ 'core/image', 'core/paragraph', 'viktorias-blocks/text-block'];
+	const ALLOWED_BLOCKS = [ 'core/image', 'core/paragraph', 'viktorias-blocks/content-block'];
 
 	const MY_TEMPLATE = [
 		[ 'core/image', {} ],

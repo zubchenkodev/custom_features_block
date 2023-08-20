@@ -41,7 +41,15 @@ html :where(.wp-block) {
   padding-left: 315px;
 }
 
-h2.title {
+h1.heading-1 {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: -1px;
+}
+
+h2.heading-2 {
   font-size: 58px;
   line-height: 70px;
   font-style: normal;
@@ -49,12 +57,43 @@ h2.title {
   letter-spacing: -1px;
 }
 
-h3.title {
+h3.heading-3 {
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
   letter-spacing: -0.4px;
+}
+
+h4.heading-4 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.4px;
+}
+
+h5.lead {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+p.text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+p.label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .heading.-with-border {
@@ -71,26 +110,6 @@ h3.title {
 }
 .heading.-text-align-right {
   text-align: right;
-}
-.heading__label {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.heading__lead {
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px;
-}
-.heading__description {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
